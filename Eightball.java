@@ -21,10 +21,11 @@ public class EightBall {
         
         //Selects a random output
         Random random = new Random();
-        int select = random.nextInt(arr.length);
 
         //Loop to allow the user to ask multiple questions without having to run the program manually
         while (loopCheck) {
+            int select = random.nextInt(arr.length);
+            
             //Prompts the user for a question
             System.out.println("A question you give and an answer I will provide!");
             userQuestion = ateball.nextLine();
